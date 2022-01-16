@@ -1,0 +1,29 @@
+.main-bg-h {
+    height: 100vh;  
+}
+.b-left {
+    border-left: 6px solid #00C1FE;
+}
+.standard {
+    background-color: #00C1FE;
+}
+.border-r {
+    border-radius: 20px;
+}
+
+.ps {
+    font-size: small;
+}
+
+.rounded-sign {
+    border-radius: 20px;
+}
+
+.body {
+    height: 100vh;
+    background: linear-gradient(55deg, #00C1FE 19.39%, #FAFFC1 96.69%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
