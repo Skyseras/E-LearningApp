@@ -1,6 +1,15 @@
 <?php 
     include_once "header.php"
 ?>
+    <div class="d-flex" id="wrapper">
+        <?php 
+            include_once "sidebar.php"
+        ?>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <?php 
+                include_once "wrapperheader.php"
+            ?>
             <div class="container-fluid px-4">
                 <div class="row g-3 my-2">
                     <div class="col-12 col-sm-6 col-lg-3">

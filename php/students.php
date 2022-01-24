@@ -1,7 +1,14 @@
 <?php 
-    include_once "header.php"
+    include_once "header.php";
 ?>
-
+    <div class="d-flex" id="wrapper">
+            <?php 
+                include_once "sidebar.php"
+            ?>
+            <div id="page-content-wrapper">
+                <?php 
+                    include_once "wrapperheader.php"
+                ?>    
             <div class="bgstudent container-fluid px-4 bodyh">
                 <div class="d-flex justify-content-between align-items-center">
                     <h4 class="m-0 fw-bold">Students List</h4>
