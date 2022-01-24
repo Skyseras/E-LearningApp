@@ -32,11 +32,70 @@
                     <div class="col-sm-2 col-lg-1 m-auto">
                     </div>
                 </div>
-                <?php 
-                    for ($i = 0; $i < 4; $i++) {
-                        include "paymentrow.php";
-                    }
+
+                <?php
+                    $payments = [
+                        [
+                            'name' => 'Karthi',
+                            'payment_schedule' => 'First',
+                            'bill_number' => '00012223',
+                            'amount_paid' => 'DHS 100,000' ,
+                            'balance_amount' => 'DHS 500,000' ,
+                            'date' => '05-Jan, 2022'
+                        ],
+                        [
+                            'name' => 'Karthi',
+                            'payment_schedule' => 'First',
+                            'bill_number' => '00012223',
+                            'amount_paid' => 'DHS 100,000' ,
+                            'balance_amount' => 'DHS 500,000' ,
+                            'date' => '05-Jan, 2022'
+                        ],
+                        [
+                            'name' => 'Karthi',
+                            'payment_schedule' => 'First',
+                            'bill_number' => '00012223',
+                            'amount_paid' => 'DHS 100,000' ,
+                            'balance_amount' => 'DHS 500,000' ,
+                            'date' => '05-Jan, 2022'
+                        ],
+                        [
+                            'name' => 'Karthi',
+                            'payment_schedule' => 'First',
+                            'bill_number' => '00012223',
+                            'amount_paid' => 'DHS 100,000' ,
+                            'balance_amount' => 'DHS 500,000' ,
+                            'date' => '05-Jan, 2022'
+                        ]
+                    ];
+                    foreach($payments AS $payment){ 
                 ?>
+
+                <div class="row bg-white py-2 my-1" id="info">
+                    <div class="col-1">
+                        <p class="m-0"><?php echo $payment['name'] ?></p>
+                    </div>
+                    <div class="col-2">
+                        <p class="m-0"><?php echo $payment['payment_schedule'] ?></p>
+                    </div>
+                    <div class="col-2" id="num">
+                        <p class="m-0"><?php echo $payment['bill_number'] ?></p>
+                    </div>
+                    <div class="col-2" id="num">
+                        <p class="text-nowrap m-0"><?php echo $payment['amount_paid'] ?></p>
+                    </div>
+                    <div class="col-2" >
+                        <p class="text-nowrap m-0"><?php echo $payment['balance_amount'] ?></p>
+                    </div>
+                    <div class="col-2" id="date">
+                        <p class="text-nowrap m-0"><?php echo $payment['date'] ?></p>
+                    </div>
+                    <div class="col-1" id="editer2">
+                        <img class="m-auto px-2" src="icons/eye.svg" alt="">
+                    </div>
+                </div>
+                
+                <?php } ?>
             </div>
         </div>
     </div>

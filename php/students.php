@@ -32,11 +32,80 @@
                     <div class="col-sm-1 col-lg-1 m-auto">
                     </div>
                 </div>
-                <?php 
-                    for ($i = 0; $i < 6; $i++) {
-                        include "studentrow.php";
-                    }
+                <?php
+                    $payments = [
+                        [
+                            'name' => 'username',
+                            'email' => 'user@email.com',
+                            'phone' => '+212651477760',
+                            'enroll_number' => '1234567305477760' ,
+                            'date_of_admission' => '08-Dec, 2021'
+                        ],
+                        [
+                            'name' => 'username',
+                            'email' => 'user@email.com',
+                            'phone' => '+212651477760',
+                            'enroll_number' => '1234567305477760' ,
+                            'date_of_admission' => '08-Dec, 2021'
+                        ],
+                        [
+                            'name' => 'username',
+                            'email' => 'user@email.com',
+                            'phone' => '+212651477760',
+                            'enroll_number' => '1234567305477760' ,
+                            'date_of_admission' => '08-Dec, 2021'
+                        ],
+                        [
+                            'name' => 'username',
+                            'email' => 'user@email.com',
+                            'phone' => '+212651477760',
+                            'enroll_number' => '1234567305477760' ,
+                            'date_of_admission' => '08-Dec, 2021'
+                        ],
+                        [
+                            'name' => 'username',
+                            'email' => 'user@email.com',
+                            'phone' => '+212651477760',
+                            'enroll_number' => '1234567305477760' ,
+                            'date_of_admission' => '08-Dec, 2021'
+                        ],
+                        [
+                            'name' => 'username',
+                            'email' => 'user@email.com',
+                            'phone' => '+212651477760',
+                            'enroll_number' => '1234567305477760' ,
+                            'date_of_admission' => '08-Dec, 2021'
+                        ]
+                    ];
+                    foreach($payments AS $payment){ 
                 ?>
+                
+                <div class="row bg-white br py-2 my-1" id="info">
+                    <div class="col-1" id="imger">
+                        <img src="visuals/userpic.svg" alt="">
+                    </div>
+                    <div class="col-2">
+                        <p class="m-0"><?php echo $payment['name'] ?></p>
+                    </div>
+                    <div class="col-2">
+                        <p class="m-0"><?php echo $payment['email'] ?></p>
+                    </div>
+                    <div class="col-2">
+                        <p class="m-0"><?php echo $payment['phone'] ?></p>
+                    </div>
+                    <div class="col-2" id="num">
+                        <p class="m-0"><?php echo $payment['enroll_number'] ?></p>
+                    </div>
+                    <div class="col-2" id="date">
+                        <p class="text-nowrap m-0"><?php echo $payment['date_of_admission'] ?></p>
+                    </div>
+                    <div class="col-1 d-flex justify-content-center align-items-center" id="editer">
+                        <img class="px-2" src="icons/pen.svg" alt="">
+                        <img class="px-2" src="icons/can.svg" alt="">
+                    </div>
+                </div>
+                
+                <?php } ?>
             </div>
         </div>
     </div>
