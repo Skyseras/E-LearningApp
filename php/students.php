@@ -75,13 +75,6 @@
                             'phone' => '+212651477760',
                             'enroll_number' => '1234567305477760' ,
                             'date_of_admission' => '08-Dec, 2021'
-                        ],
-                        [
-                            'name' => 'username',
-                            'email' => 'user@email.com',
-                            'phone' => '+212651477760',
-                            'enroll_number' => '1234567305477760' ,
-                            'date_of_admission' => '08-Dec, 2021'
                         ]
                     ];
                     foreach($payments AS $payment){ 
